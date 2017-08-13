@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvNomeAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Bolinha"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvNomeAnimal"
+        android:layout_alignLeft="@id/tvNomeAnimal"
+        android:layout_alignStart="@id/tvNomeAnimal"
+        android:layout_alignRight="@id/tvNomeAnimal"
+        android:layout_alignEnd="@id/tvNomeAnimal">
+
+        <TextView
+            android:id="@+id/tvIdadeAnimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3 ano(s)"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSexoAnimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Macho"
+            android:padding="8dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
